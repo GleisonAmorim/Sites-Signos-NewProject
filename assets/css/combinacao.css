@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("https://i.postimg.cc/tCMqFFbr/Elegant-Cinematic-Wedding-Thumbnail-HD-169-1.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.7;
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .characteristics {
+    margin-top: 20px;
+  }
+
+  .characteristics h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .characteristics p {
+    margin-bottom: 15px;
+  }
+
+  .back-button {
+position: fixed;
+top: 20px;
+left: 20px;
+background-color: #420bd8;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 14px;
+transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+background-color: #3c0fe0;
+}
+
+ footer {
+ 
+  text-align: center;
+  padding: 1px;
+  margin-top: 2px; /* Adicionei um margin-top para controlar a altura */
+  background-color: rgba(241, 241, 241, 0.5);
+  color: #000;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; /* Certifique-se de que o footer esteja em um nível superior */
+}
+}
+
+.footer-links {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+}
+
+.footer-links a {
+color: #000;
+text-decoration: none;
+}
+.footer-links a:hover {
+text-decoration: underline;
+}
+
+
+  .images-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .symbol img,
+  .tattoo img {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .symbol,
+  .tattoo {
+    width: 100%;
+  }
+
+  .floating-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #a111b4;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    font-size: 12px;
+    line-height: 1.2;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+  }
+
+  .floating-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .floating-button:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #ec0666, #d30516);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.2s ease;
+  }
+
+  .button-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  .fortune-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+    background-color: rgba(207, 11, 214, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+
+  .floating-button:hover:before {
+    opacity: 1;
+  }
+
+  .fortune-popup h3 {
+    margin-top: 0;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #999;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .thermometer-container {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 20px;
+}
+
+.thermometer {
+width: 20px;
+height: 200px;
+background-color: #ddd;
+position: relative;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.mercury {
+width: 100%;
+background-color: #e74c3c;
+position: absolute;
+bottom: 0;
+transition: height 0.5s ease;
+}
+
+.percentage {
+font-size: 24px;
+margin-top: 10px;
+color: #333;
+font-weight: bold;
+}
+.button {
+    background-color: #f31c1c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #963730;
+  }
+
+  /* Personalização do menu de escolha dos signos */
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+
+  .button.pulse {
+animation: pulseAnimation 1.5s infinite;
+}
+
+@keyframes pulseAnimation {
+0%, 100% {
+  transform: scale(1);
+}
+50% {
+  transform: scale(1.05);
+}
+}
+.compatibility-summary {
+overflow-y: auto;
+margin-top: 20px;
+}
+
+
+.overflow-y: auto;
+margin-top: 20px;
+
+
+/* Ajusta a margem do rodapé */
+  footer {
+
+
+margin-top: 40px; /* Ajuste conforme necessário */
+}
